@@ -274,22 +274,26 @@ nav {
   position: relative;
   width: 100%;
   max-width: 300px;
-  border-radius: 4px;
-  background-color: var(--accent-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   overflow: hidden;
+  transition: var(--transition);
 }
 
 .profile-img {
   width: 100%;
   height: auto;
   display: block;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
   transition: var(--transition);
+  filter: grayscale(20%) contrast(1);
+}
+
+.image-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -10px rgba(2, 12, 27, 0.9);
 }
 
 .image-wrapper:hover .profile-img {
-  mix-blend-mode: normal;
   filter: none;
 }
 
