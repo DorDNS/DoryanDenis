@@ -446,9 +446,13 @@ nav {
   margin-bottom: 2rem;
 }
 
-.project-header .fa-folder {
-  font-size: 40px;
+.project-icon {
   color: var(--accent-color);
+  transition: var(--transition);
+}
+
+.glass-card:hover .project-icon {
+  transform: scale(1.1);
 }
 
 .project-links a {
