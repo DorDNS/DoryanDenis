@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doryan Denis | CS Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="background-gradient"></div>
+
+  <header class="glass-header">
+    <nav>
+      <div class="logo">Doryan.</div>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="https://dordns.github.io/StudyHub/" target="_blank" data-i18n="nav_studyhub">StudyHub</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li><button id="lang-toggle" class="lang-btn">FR</button></li>
+      </ul>
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container">
+        <span class="greeting fade-in" data-i18n="hero_greeting">Hi, my name is</span>
+        <h1 class="name fade-in delay-1">Doryan Denis.</h1>
+        <h2 class="subtitle fade-in delay-2" data-i18n="hero_subtitle">Data Scientist & AI Student.</h2>
+        <p class="description fade-in delay-3" data-i18n="hero_description">
+          I'm a 4th-year Engineering Student at <strong>Efrei Paris</strong>, specializing in Data Science & Artificial
+          Intelligence. I turn data into innovation.
+        </p>
+        <div class="hero-buttons fade-in delay-4">
+          <a href="#projects" class="cta-button" data-i18n="hero_cta">Check out my work</a>
+          <a href="#contact" class="cta-button outline" data-i18n="hero_contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about_title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p data-i18n="about_p1">
+              Hello! I'm Doryan, a passionate student-engineer at Efrei Paris. My journey combines a solid academic
+              foundation in modeling, data analysis, and machine learning with concrete projects in AI and Data Science.
+            </p>
+            <p data-i18n="about_p2">
+              I thrive in collaborative environments and have honed my project management and communication skills
+              through strong associative engagement. I love solving complex problems and building tools that have a real
+              impact.
+            </p>
+            <p data-i18n="about_tech">Here are a few technologies I've been working with recently:</p>
+            <ul class="skills-list">
+              <li>Python (Pandas, NumPy)</li>
+              <li>Scikit-learn</li>
+              <li>TensorFlow / Keras</li>
+              <li>SQL</li>
+              <li>Vue.js</li>
+              <li>Azure</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <div class="image-wrapper">
+              <img src="/doryan.jpg" alt="Doryan Denis" class="profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects_title">Some Things I've Built</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <div class="project-header">
+                <i class="fas fa-train"></i>
+                <div class="project-links">
+                  <a href="https://github.com/DorDNS/TGV-Punctuality-Dashboard" target="_blank"><i
+                      class="fab fa-github"></i></a>
+                  <a href="https://tgv-punctuality-dashboard.streamlit.app/" target="_blank"><i
+                      class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">TGV Punctuality Dashboard</h3>
+              <p class="project-description" data-i18n="project_tgv_desc">
+                Interactive web tool to analyze SNCF TGV performance using open data. Features temporal analysis,
+                dynamic filtering, and root cause identification of delays.
+              </p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Plotly</li>
+                <li>Streamlit</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <div class="project-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="project-icon">
+                  <path d="M3 6h18" />
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                  <line x1="10" y1="11" x2="10" y2="17" />
+                  <line x1="14" y1="11" x2="14" y2="17" />
+                </svg>
+                <div class="project-links">
+                  <a href="https://github.com/DorDNS/SolutionDelivery_PRJ" target="_blank"><i
+                      class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">TrashMap</h3>
+              <p class="project-description" data-i18n="project_trashmap_desc">
+                Web tool for mapping and proactive detection of overflowing bins. Uses image analysis (CNN) to alert
+                field teams before waste accumulates.
+              </p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>CNN</li>
+                <li>Nuxt.js</li>
+                <li>Computer Vision</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <div class="project-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="project-icon">
+                  <path d="M2 22h20" />
+                  <path d="M12 2v20" />
+                  <path d="M12 17s-6-2-6-8V5l6-3 6 3v4c0 6-6 8-6 8Z" />
+                </svg>
+                <div class="project-links">
+                  <a href="https://github.com/DorDNS/ML_Project" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">Airline Satisfaction Prediction</h3>
+              <p class="project-description" data-i18n="project_airline_desc">
+                Machine Learning project anticipating airline customer satisfaction from 100k+ reviews. KNN model
+                achieved 92% accuracy.
+              </p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>Scikit-learn</li>
+                <li>KNN</li>
+                <li>Pandas</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <div class="project-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="project-icon">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <div class="project-links">
+                  <a href="https://github.com/DorDNS/AtelierDS_PRJ" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="project-title">ANSSI Pipeline</h3>
+              <p class="project-description" data-i18n="project_anssi_desc">
+                Automated analysis platform for ANSSI vulnerabilities. Extracts CVEs, enriches data via APIs (MITRE &
+                EPSS), and produces consolidated datasets.
+              </p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>Data Engineering</li>
+                <li>Cybersecurity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-container">
+        <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+        <p class="contact-text" data-i18n="contact_text">
+          I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is
+          always open!
+        </p>
+        <a href="mailto:doryan.denis@efrei.net" class="cta-button" data-i18n="contact_cta">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Designed & Built by Doryan Denis</p>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
